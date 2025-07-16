@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Box Shadow generator</title>
     <link rel="stylesheet" href="../../assets/style.css" />
 </head>
 
@@ -12,7 +12,46 @@
     <div class="container">
         <div class="fixed-width">
 
-            <div class="block white">
+            <div class="block white pt-20">
+                <h2> Box Shadow Generator</h2>
+                <div class="result">
+                    <div class="element"></div>
+                </div>
+                <div class="sliders">
+                    <div class="slider-wrapper">
+                        <label class="h-shadow" for>Horizontal shadow</label>
+                        <input type="range" name="h-shadow" id="h-shadow" max="100" min="-100" value="0">
+                    </div>
+                    <div class="slider-wrapper">
+                        <label class="v-shadow" for>Vertical shadow</label>
+                        <input type="range" name="v-shadow" id="v-shadow" max="100" min="-100" value="0">
+                    </div>
+                    <div class="slider-wrapper">
+                        <label class="blur-radius" for>Blur radius</label>
+                        <input type="range" name="blur-radius" id="blur-radius" max="100" min="-100" value="0">
+                    </div>
+                    <div class="slider-wrapper">
+                        <label class="spread-radius" for>Spread radius</label>
+                        <input type="range" name="spread-radius" id="spread-radius" max="100" min="-100" value="0">
+                    </div>
+                    <div class="slider-wrapper">
+                        <label class="shadow-color" for>Shadow Color</label>
+                        <input type="color" name="shadow-color" id="shadow-color">
+                    </div>
+                    <div class="slider-wrapper">
+                        <label class="shadow-color-opacity" for>Shadow Color Opacity</label>
+                        <input type="range" name="shadow-color-opacity" id="shadow-color--opacity" max="1" min="0"
+                            value="0" step="0.1">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="">Inset Shadow</label>
+                        <input type="checkbox" name=shadow-inset" id="shadow-inset">
+                    </div>
+                    <div class="code-wrapper">
+                        <textarea name="" id="code" rows="5"></textarea><br>
+                        <button class="generate" onclick="generateBoxShadow()">Generate</button>
+                    </div>
+                </div>
 
             </div>
 
