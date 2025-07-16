@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="fixed-width">
+            <div class="block ">
+                <h2>Age Calculator</h2>
+            </div>
+            <div class="block white">
+                <form id="agecalculator" method="post" action="#">
+                    <label>Enter your birthdate:</label>
+                    <input type="text" name="birthdate" id="birthdate" placeholder="DD-MM-YYYY" required />
+                    <button type="submit" name="saveAge" value="calculate" id="calculateAfe">Calculate age</button>
+                </form>
+                <div class="result-container" id="youragecalculator">
+                    <div class="result" id="result">
+                        <div class="result-item">
+                            <span class="your_age" id="your_age">32 years</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="agecalculator.js"></script>
+</body>
+
+</html>
