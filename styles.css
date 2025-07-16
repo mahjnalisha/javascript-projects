@@ -170,3 +170,19 @@ button.green{
 .generateblock label, .generateblock p, .generateblock span{ 
     color:#000!important
 }
+.common-row{
+    padding:40px 20px;
+}
+.common-row input{
+    border:1px solid #ccc
+}
+#data{
+    flex-direction: column;
+}
+.backgroundcolor-contianer{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    min-height: 100vh;
+    color:#fff;
+}
