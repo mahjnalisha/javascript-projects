@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background: #000;
+}
+.container{
+    width: 100%;
+    min-height:300px;
+    background: #000;
+    padding-top: 20px;
+
+}
+.todo-app{
+    background: #fff;
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 20px;
+
+}
+.todo-app h2{
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.todo-app h2 img{
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+}
+.todo-app:hover{
+    box-shadow: 1px 2px #000;
+}
+.row{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #efefef;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+ul li span{
+    position: absolute;
+    right:0px;
+    top:5px;
+    width: 40px;
+    height:50px;
+    font-size: 20px;
+
+}
+ul li span:hover{
+    background-color: #000;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 500;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 20px;
+    color: #fff;
+    background-color: #111;
+    outline: none;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background: #000;
+}
+ ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background: url("images/unchecked.png");
+    background-size: 50px;
+    background-position: center;
+    top:8px;
+    left: 20px;
+ }
+ ul li{
+    position: relative;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 20px;
+ }
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+    color:#666;
+    background-image: ur('image/checked.png');
+}
+
+#main{
+    min-height:400px;
+    padding: 0px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+    width:1200px;
+    margin: 0px auto;flex-flow: wrap;
+
+}
+#main button{
+    background: #008000;
+
+}
+button#addBtn{
+    position: fixed;
+    top:20px;
+    right:20px;
+    border-radius: 4px;
+    background: #008000;
+    
+}
+#main textarea{
+    min-height: 100px;;
+    border-radius: 4px;
+    background: #111;
+    color:#efefef;
+}
+.notes_container h2{
+    color:#fff;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+.note {
+    margin:20px ;
+
+}
+.fixed-width{
+    width: 700px;
+    margin: 0px auto;
+}
+.container .block{
+    background: transparent!important;
+    margin: 20px 0px 50px 0px;
+    color: #fff;
+}
+.container .block.white {
+    background: white!important;;
+    color:#000!important
+}
+button.green{
+    color:#fff;
+    background: #008000
+    ;
+}
+.generateblock{
+    background: #fff;
+    color:#000!important;
+    padding: 20px;
+}
+.generateblock label, .generateblock p, .generateblock span{ 
+    color:#000!important
+}

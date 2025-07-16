@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="fixed-width">
+            <div class="block">
+                <h2>Password Generator</h2>
+            </div>
+            <div class="block white input-box">
+                <input type="text" placeholder="Enter your password" name="password" id="password_in" disabled>
+                <button type="button" class="submitButton green" value="copy">Copy</button>
+
+            </div>
+            <div class="generateblock">
+                <div class="block">
+                    <input type="range" min="10" max="30" id="inputSlider">
+                </div>
+                <div class="block">
+                    <p>Password Length</p>
+                    <span id="sliderValue">10</span>
+                </div>
+                <div class="block">
+                    <label for="lowercase">Include Lowercase Letters (a-z)</label>
+                    <input type="checkbox" name="lowercase" id="lowercase" checked>
+                </div>
+                <div class="block">
+                    <label for="uppercase">Include Uppercase Letters (A-Z)</label>
+                    <input type="checkbox" name="uppercase" id="uppercase" checked>
+                </div>
+                <div class="block">
+                    <label for="specialcharacters">Include Special Characters(@-*)</label>
+                    <input type="checkbox" name="specialcharacters" id="specialcharacters" checked>
+                </div>
+                <div class="block">
+                    <label for="numbers">Include Numbers(0-9)</label>
+                    <input type="checkbox" name="numbers" id="numbers" checked>
+                </div>
+                <button type="button" id="generateButton" class="generateButton green">Generate</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="passwordgenerator.js" defer></script>
+</body>
+
+</html>
