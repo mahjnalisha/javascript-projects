@@ -56,3 +56,16 @@ input{
 .pt-20{
     padding-top: 20px;
 }
+
+.result{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#element{
+    height: 120px;
+    width: 120px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
