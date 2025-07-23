@@ -37,9 +37,6 @@ function hexToRgba(shadowcolor, shadowcoloropacity) {
     return `rgba(${r},${g},${b}, ${shadowcoloropacity})`
 }
 
-// function applyShadow(element, boxShadow) {
-//     element.style.boxShadow = boxShadow;
-// }
 
 function upadateCode(text) {
     code.textContent = `box-shadow: ${text}`;
