@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="full-width">
+            <h2>Tip Calculator</h2>
+            <div class="block white">
+
+                <div class="form-group">
+                    <label for="Bill">Bill</label>
+                    <input type="number" name="total_bill_amount" id="total_bill_amount">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Tip</label>
+                    <input type="range" name="" id="tip" min="0" max="20" value="5" step="1">
+                </div>
+                <div class="form-group">
+                    <label for="">No.of People</label>
+                    <input type="range" name="" id="no_of_people" min="1" max="20" value="5" step="1">
+                </div>
+
+                <div class="output_value">
+                    <label for="total_tip">Tip per person</label>
+                    <span id="tip_person">0.00</span>
+                </div>
+                <div class="output_value">
+                    <label for="">total per person</label>
+                    <span id="total_person"></span>
+                </div>
+                <button onclick="calculateTip()">Generate</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js" defer></script>
+
+</body>
+
+</html>
