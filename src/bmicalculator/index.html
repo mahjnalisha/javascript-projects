@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMi Calculator Preview</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+</head>
+
+<body>
+
+    <div class="container pt-20">
+        <div class="full-width pt-20">
+            <h2>Calculate BMI index</h2>
+            <div class="block white">
+                <div class="form-group">
+                    <label> Age:</label>
+                    <input type="text" name="" value="" id="age">
+                </div>
+                <div class="form-group"><label for="gender">Gender</label>
+                    <input type="radio" name="gender" id="gender-male"> Male
+                    <input type="radio" name="gender" id="gender-female"> Female
+                </div>
+                <div class="form-group"><label for="height">Height</label>
+                    <input type="range" name="height" id="height" min="10" max="200" value="150"
+                        oninput="updateHeight(this.value)">
+                    <span id="height-value">150cm</p>
+                </div>
+                <div class="form-group"><label for="weight">Weight</label>
+                    <input type="range" name="weight" id="weight" min="10" max="200" value="50"
+                        oninput="updateWeight(this.value)">
+                    <span id="weight-value">50kg</p>
+                </div>
+                <button onclick="calculateBMI()"> CalculateBMI</button>
+                <div class="output-index">
+                    <span>Your BMI Index:</span>
+                    <span id="calbmivalue">27.4</span>
+                    <span id="bmidefinition">Overweight</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js" defer></script>
+
+</body>
+
+</html>
