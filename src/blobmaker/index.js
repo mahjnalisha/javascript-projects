@@ -21,7 +21,7 @@ function createBlob() {
 
     let borderRadius = `${radiusOne}% ${100 - radiusOne}% ${100 - radiustwo}% ${100 - radiusthree}% / ${radiusOne}% ${100 - radiusOne}% ${100 - radiustwo}% ${100 - radiusthree}%`;
 
-    let blobStyle = `border-radius: ${borderRadius}; height:${blobHeight}; weight:${blobWeight}; width:${blobWeight}`;
+    let blobStyle = `border-radius: ${borderRadius}; height:${blobHeight}px; weight:${blobWeight}px; width:${blobWeight}`;
 
     // const outputCode = document.getElementById("")
     outputCode.value = blobStyle;
