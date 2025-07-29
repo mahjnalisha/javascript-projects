@@ -7,7 +7,7 @@ function pyramid(n) {
         let str = "";
 
         for (let j = 1; j <= column; j++) {
-            if (j <= midpoint) {
+            if (j >= midpoint - i && j <= midpoint + i) {
                 str += "#";
             }
             else {
@@ -19,4 +19,4 @@ function pyramid(n) {
     }
 }
 
-console.log(pyramid(5))
+console.log(pyramid(9))
